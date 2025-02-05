@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../common/Button/Button";
 
 function Discover() {
   return (
@@ -29,9 +30,10 @@ function Discover() {
           Connect with your past. Build your family tree and preserve your
           heritage for generations.
         </p>
-        <button className="mt-4 px-5 py-2 flex items-center gap-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition">
-          Get Started
-        </button>
+
+        <div className="mt-6 flex justify-center lg:justify-start  gap-4 ">
+          <Button title={"Get Started"} />
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import AboutUs from "@/Components/AboutUs/AboutUs";
+import Community from "@/Components/Community/Community";
 import Discover from "@/Components/Discover/Discover";
 import FAQSection from "@/Components/FAQs/FAQs";
 import Features from "@/Components/Features/Features";
@@ -10,6 +11,7 @@ export default function Home() {
     <>
       <Header />
       <HeroSection />
+      <Community />
       <Features />
       <AboutUs />
       <Discover />
