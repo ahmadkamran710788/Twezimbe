@@ -13,5 +13,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./Components/**/*.{js,ts,jsx,tsx}",
+  ],
 };
