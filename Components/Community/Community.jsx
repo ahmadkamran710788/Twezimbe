@@ -7,7 +7,7 @@ function Community() {
       <div className="flex flex-col lg:flex-row items-center justify-between px-6 sm:px-12 lg:px-20 py-10 lg:py-20">
         <div className="relative w-[302px] h-[593px] flex flex-col items-center lg:ml-32">
           <img
-            src="fullScreen.png"
+            src="fullScreen.jpeg"
             alt="Phone"
             className="w-[302px] h-[593px]"
           />
