@@ -20,7 +20,7 @@ function Features() {
           place.
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-6 bg-gray-100">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-6">
           {featureCardsData.map((card, index) => (
             <FeatureCard key={index} {...card} />
           ))}
