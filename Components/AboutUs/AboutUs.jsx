@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Button from "../common/Button/Button";
 
 function AboutUs() {
   return (
@@ -42,9 +43,9 @@ function AboutUs() {
             </p>
           </div>
 
-          <button className="mt-6 md:mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300 w-fit">
-            Download Brochure →
-          </button>
+          <div className="mt-6 flex justify-center lg:justify-start  gap-4 ">
+            <Button title={"Download Brochure"} />
+          </div>
         </div>
       </div>
     </div>

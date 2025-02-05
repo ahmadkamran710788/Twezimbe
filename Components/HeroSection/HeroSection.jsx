@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import Button from "../common/Button/Button";
 
 function HeroSection() {
   return (
@@ -16,43 +17,21 @@ function HeroSection() {
           </p>
 
           <div className="mt-6 flex justify-center lg:justify-start  gap-4 ">
-            <button className="flex items-center justify-between w-46 bg-[#1170B2] text-white rounded-md font-semibold transition overflow-hidden">
-              <span className="flex-1 px-4 py-3">Get Started</span>
-              <span className="bg-[#4D94C54D] h-full flex items-center px-3">
-                <Image
-                  src="/arrowUp.png"
-                  alt="Arrow Outward"
-                  width={12}
-                  height={12}
-                  className="text-white"
-                />
-              </span>
-            </button>
+            <Button title={"Get Started"} />
 
-            <button className="flex items-center justify-between w-46 bg-[#1170B2] border border-blue-600 text-white rounded-md font-semibold transition overflow-hidden">
-              <span className="flex-1 px-4 py-3">Book Demo</span>
-              <span className="bg-[#4D94C54D] h-full flex items-center px-3">
-                <Image
-                  src="/arrowUp.png"
-                  alt="Arrow Outward"
-                  width={12}
-                  height={12}
-                  className="text-white"
-                />
-              </span>
-            </button>
+            <Button title={"Book Demo"} />
           </div>
         </div>
 
         <div className="flex justify-center items-center bg-white rounded-3xl p-5 relative ">
-          <div className="bg-white rounded-3xl shadow-lg w-[486px] h-[486px] relative opacity-75 overflow-visible">
+          <div className="bg-white rounded-3xl shadow-lg w-[380px] h-[380px] sm:w-[486px] sm:h-[486px] relative opacity-75 overflow-visible">
             <img
               src="community.jpeg"
               alt="Sample"
               className="w-full h-full object-cover rounded-md opacity-80"
             />
 
-            <div className="absolute top-4 right-[-70px] bg-opacity-75 bg-white flex gap-3 items-center justify-between w-[197px] h-[68px] rounded-md p-2 shadow-md">
+            <div className="absolute  top-4 right-[100px] sm:right-[-70px] bg-opacity-75 bg-white flex gap-3 items-center justify-between w-[197px] h-[68px] rounded-md p-2 shadow-md">
               <div className="bg-black text-white p-3 rounded-2xl">
                 <img src="bell.png" alt="" className="w-16" />
               </div>
@@ -62,7 +41,7 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute bottom-36 left-[-70px] bg-opacity-75 bg-white flex items-center w-[197px] h-[68px] rounded-md p-4 shadow-md">
+            <div className="absolute bottom-44 sm:bottom-36 right-[100px]   sm:right-0 sm:left-[-70px] bg-opacity-75 bg-white flex items-center w-[197px] h-[68px] rounded-md p-4 shadow-md">
               <div className="bg-gray-300 w-12 h-12 rounded-full overflow-hidden absolute top-[-20px] left-[10px]">
                 <img
                   src="user.jpeg"
@@ -76,7 +55,7 @@ function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute bottom-4 right-[-70px] bg-opacity-50 bg-white flex flex-col items-center w-[197px] h-[85px] rounded-md p-2 shadow-md">
+            <div className="absolute bottom-10 sm:bottom-4 right-[100px] sm:right-[-70px] bg-opacity-50 bg-white flex flex-col items-center w-[197px] h-[85px] rounded-md p-2 shadow-md">
               <div className="text-gray-600 text-xs font-normal text-center">
                 10k+ Joined Fund raising
               </div>
